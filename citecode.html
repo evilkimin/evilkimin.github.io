@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Citing Code
+        </title>
+        <li><a href="index.html">Back</a></li>
+        <h3>Citing Code: Check code for links</h3>
+        <style>
+            .dropbtn {
+                background-color: honeydew;
+                color: brown;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background: white;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown:hover .dropdown-content {display: block;}
+            .dropdown-content a:hover {background-color: grey;}
+
+            .drpbttn {
+                background-color: lightpink;
+                color: brown;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+            }
+            .again {
+                position: relative;
+                display: inline-block;
+            }
+            .drop-content {
+                display: none;
+                position: absolute;
+                background: white;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .drop-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .again:hover .drop-content {display: block;}
+            .drop-content a:hover {background-color: grey;}
+        </style>
+        <!--this is the CSS from the same page as the hover button HTML. I copied most of the work but changed the colours. -->
+    </head>
+    <body>
+        <button type="button" onclick="alert('I love kitty')">ooh button</button> <!--https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_button_test  I changed the text of the button and what it says. The button code is from the website-->
+        <div class="dropdown">
+            <button class="dropbtn">hover over me</button>
+            <div class="dropdown-content">
+                <a href="index.html">Back</a>
+                <button type="button" onclick="alert('hi again')">alert?</button>
+            </div> <!--https://www.w3schools.com/howto/howto_css_dropdown.asp helped me make the buttons and I tried mixing the first lesson with this lesson to see if the button would work inside a hover. it sort of works...?-->
+        </div>
+        <div class="again">
+            <button class="drpbttn">hamsters</button>
+            <div class="drop-content">
+                <a href="https://i.pinimg.com/736x/f7/0c/69/f70c69fe75aef66ee0799192c024dabb.jpg">ham 1</a>
+                <a href="https://i.pinimg.com/736x/d8/1f/64/d81f6400626b95e0f92ef59b2b5fc908.jpg">ham 2</a>
+                <a href="https://i.pinimg.com/736x/ba/e6/3b/bae63b6ee20c4c7aa1f6464964467c1d.jpg">ham 3</a>
+            </div>
+        </div>
+        <!--LINKS USED
+        https://www.w3schools.com/howto/howto_css_dropdown.asp
+        https://www.w3schools.com/Tags/tryit.asp?filename=tryhtml_button_test
+        Summary: Used one link to make a normal button that pops up an alert.
+        The other link taught me how to make a hover menu. I tried to mix 
+        putting in the alert button into the hover menu but it didn't work
+        as well as I wanted it to. I then made a hover menu that shows you pictures 
+        of hamsters which worked out better.
+        -->
+    </body>
+</html>
