@@ -21,7 +21,9 @@ button2 = createButton('oh no you got me!!');
         button.hide();
 
     });
-   
+
+    //there were some things deleted that might make my callbacks look a little wonky. i was frustrated
+    
     //button2.onclick(function(){
       //  colourChange2();
     //})
