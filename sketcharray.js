@@ -15,28 +15,36 @@ yummyFruit.push('cheese', 'leaf', 'chiikawa')
 
 //ref: Also professor Tindale :) 
 
-//var fallBall = 20;
-//var positions = [];
+var fallBall = 20;
+var positions = [];
+var speed = [];
 
-//function setup(){
-//    createCanvas(600,600);
-//}
+function setup(){
+   createCanvas(600,600);
 
-//function draw(){
-//    background(0);
- //   ellipse(mouseX, mouseY, 16, 16);
-    //fallBall();
-//}
+}
 
-//function fallBall(){
- //   for(var i = 0; i < fallBall i++){
- //       positions[i] = random(height);
- //       translate(positions[i]);
- //       pop();
- //       positions[i] = positions[i] % height;
+function manyDrop(){
+    for(var i = 0; i < fallBall; i++){
+        ellipse(mouseX, mouseY, 16, 16);
+        
+        
+        positions[i] = random(height);
+        translate(mouseX, positions[i]);
+        //pop();
+        //positions[i] +=speeds[i];
+        //positions[i] = positions[i] % height;
 
-//    }
-//}
+   }
+}
+
+function draw(){
+    background('lightpink');
+    ellipse(mouseX, mouseY, 16, 16);
+    manyDrop();
+}
+
+
 
 // This was given up on half way. I tried to make a mouseX, mouseY ball
 // that leaks balls. However, trying to make the animation was a bit
